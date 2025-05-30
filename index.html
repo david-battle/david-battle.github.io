@@ -4,24 +4,26 @@
   <meta charset="utf-8">
   <title>Star Trek Rankings</title>
 
-  <!-- Essential OG tags -->
-  <meta property="og:title"   content="Star Trek: Series & Films Ranked by Popularity">
-  <meta property="og:description"
-        content="Every official Star Trek series & film ranked by audience & critical success.">
-  <meta property="og:image"   content="https://david-battle.github.io/banner.png">
+  <!-- Open Graph tags (these will be scraped by Facebook) -->
+  <meta property="og:title"        content="Star Trek: Series & Films Ranked by Popularity">
+  <meta property="og:description"  content="Every official Star Trek series & film ranked by audience & critical success.">
+  <meta property="og:image"        content="https://david-battle.github.io/banner.png">
   <meta property="og:image:width"  content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:type"    content="website">
-  <meta property="og:url"     content="https://david-battle.github.io/">
+  <meta property="og:type"         content="website">
+  <meta property="og:url"          content="https://david-battle.github.io/">
 
-  <!-- Twitter card (in case Facebook falls back to TW tags) -->
-  <meta name="twitter:card"    content="summary_large_image">
-  <meta name="twitter:image"   content="https://david-battle.github.io/banner.png">
-
-  <!-- Redirect immediately to the Gist -->
-  <meta http-equiv="refresh"   content="1; url=https://gist.github.com/david-battle/fb85a553b23c1013d00700fb514cf933">
+  <!-- Twitter Cards fallback -->
+  <meta name="twitter:card"   content="summary_large_image">
+  <meta name="twitter:image"  content="https://david-battle.github.io/banner.png">
 </head>
 <body>
-  Redirecting to the Star Trek rankings…
+  <p>Redirecting to the Star Trek rankings…</p>
+  <script>
+    // Wait one second, then send the user to the Gist
+    setTimeout(function() {
+      window.location.href = "https://gist.github.com/david-battle/fb85a553b23c1013d00700fb514cf933";
+    }, 1000);
+  </script>
 </body>
 </html>
